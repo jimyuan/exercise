@@ -1,0 +1,26 @@
+@charset 'utf-8';
+
+.app-body {
+  position: relative;
+}
+
+.container {
+  @include absolute(top ($base-nav-height + $global-spacing) left 0 right 0);
+  padding: $global-spacing;
+  max-width: $screen-md;
+  background: white;
+  margin: auto;
+
+  &.ng-enter {
+    transition: opacity 1s linear;
+    opacity: 0;
+  }
+
+  &.ng-enter.ng-enter-active {
+    opacity: 1;
+  }
+}
+
+.brief {
+  font-size: 1.4rem;
+}

@@ -1,0 +1,46 @@
+@charset 'utf-8';
+
+// 基本颜色定义
+$grass:   rgb(148,186,101)   !default;
+$limon:   rgb(210,232,146)   !default;
+$fade-sun:rgb(236,244,166)   !default;
+$new-tree:rgb(192,232,125)   !default;
+$dead-gress:rgb(220,247,113) !default;
+
+// 基本空行
+$global-spacing: 1.6rem !default;
+
+// 基本字体设置
+$font-sans: 'Segoe UI', 'Lucida Grande', Helvetica, Arial, 'Microsoft YaHei', FreeSans, Arimo, 'Droid Sans', 'wenquanyi micro hei', 'Hiragino Sans GB', 'Hiragino Sans GB W3', Arial, sans-serif !default;
+$font-mono: Menlo, Monaco, Consolas, 'Courier New', monospace !default;
+
+// 基本配色设置
+$base-font-size : 1.6rem            !default; //16px
+$base-background: white             !default;
+$base-text-color: invert($fade-sun) !default;
+$base-color-link: $grass            !default; 
+
+// 导航样式
+$base-nav-background: $grass        !default;
+$base-nav-color: white              !default;
+$base-nav-height: 6rem              !default; 
+
+
+// 断点设置
+// Extra small screen / phone
+$screen-xs:   480px   !default;
+// Small screen / tablet
+$screen-sm:   768px   !default;
+// Medium screen / desktop
+$screen-md:   992px   !default;
+// Large screen / wide desktop
+$screen-lg:   1200px  !default;
+
+$breakpoints: (
+  'xs': (min-width: $screen-xs),
+  'sm': (min-width: $screen-sm),
+  'md': (min-width: $screen-md),
+  'lg': (min-width: $screen-lg)
+);
+
+

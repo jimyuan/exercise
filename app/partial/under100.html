@@ -1,0 +1,13 @@
+<h1><a href="#/home">100以内连加连减习题</a></h1>
+<h3>说明：</h3>
+<ul class="brief">
+  <li>系统默认随机生成 20 道习题，因为是随机的，所以当你感觉有些题目数字比较奇怪时，可以将鼠标移动至该题，点击后面的“刷新”按钮进行重新生成。</li>
+  <li>按下“开始答题”按钮，请小朋友们正式开始答题；做完后，请按下“答题完毕”按钮提交该练习。</li>
+</ul>
+<ol class="exec-list">
+  <li ng-repeat="exec in execs" data-index="{{$index}}">
+    <i class="exec-index" ng-bind="$index+1"></i>
+    <span ng-bind="exec"></span>
+    <i class="icon-font icon-refresh" ng-click="obtain($index)"></i>
+  </li>
+</ol>

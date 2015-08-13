@@ -1,0 +1,11 @@
+{
+  "name": "exercise",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "angularjs": "^1.4",
+    "angular-resource": "^1.4",
+    "angular-route": "^1.4",
+    "angular-animate": "^1.4"
+  }
+}

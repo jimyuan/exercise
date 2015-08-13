@@ -1,0 +1,77 @@
+@charset 'utf-8';
+
+@keyframes refresh {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.exec-list {
+  @include clearfix;
+  min-width: 730px;
+  list-style-type: none;
+
+  & > li {
+    font-family: $font-mono;
+    font-size: 2.5rem;
+    width: 40%;
+    float: left;
+    line-height: 4rem;
+    background-color: #fff;
+    
+    &.ng-enter {
+      transition: all 1s ease;
+    }
+
+    &.ng-enter {
+      opacity: 0;
+
+    }
+
+    &.ng-enter.ng-enter-active {
+      opacity: 1;
+
+      & > .icon-refresh {
+        animation: refresh 0.5s linear;
+      }
+    }
+
+    &:nth-child(odd) {
+      margin-right: 5%;
+    }
+
+    & > span {
+        color: darken($grass, 5%);
+    }
+
+    &:hover {
+      .icon-refresh {
+        display: block;
+      }
+    }
+
+    .icon-refresh {
+      float: right;
+      color: $limon;
+      display: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.exec-index {
+  display: inline-block;
+  @include size(2.5rem);
+  line-height: 2.5rem;
+  background-color: $fade-sun;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 50%;
+  font-style: normal;
+  margin-right: 1rem;
+
+}
